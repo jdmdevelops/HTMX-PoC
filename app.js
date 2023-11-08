@@ -25,7 +25,7 @@ app.get("/test", (req, res) => {
   res.sendFile(__dirname + "/pages/test.html");
 });
 
-app.use("/get", pizza);
+app.use("/pizza", pizza);
 
 app.listen(port, () => {
   console.log(`HTMX-poc listening on port ${port}`);
