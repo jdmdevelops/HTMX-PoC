@@ -4,19 +4,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';** ">
-
-        <title>HTMX-poc</title>
+        <title>Main</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://unpkg.com/htmx.org@1.9.8" integrity="sha384-rgjA7mptc2ETQqXoYC3/zJvkU7K/aP44Y+z7xQuJiVnB/422P/Ak+F/AqFR7E4Wr" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="">
     </head>
     <body>
         <script src="" async defer></script>
         <h1>Main page</h1>     
         <button hx-get="/test" hx-push-url="/test" hx-target="body">Go to test route</button>
         
-        <button hx-get="/get/cheese">Get cheese pizza</button>
+        <button hx-get="/pizza/cheese" hx-target="body">Get cheese pizza</button>
     </body>
 </html>
