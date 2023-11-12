@@ -14,13 +14,17 @@
     ></script>
   </head>
   <body>
-    <h1>Todo App</h1>
-    <content hx-get="/todos" hx-trigger="load" hx-swap="innerHTML"></content>
+    <h1>Todo app</h1>
+    <content
+      hx-get="/back-end/routes"
+      hx-trigger="load every 1s"
+      hx-swap="innerHTML"
+    ></content>
     <form>
-      <label>New Todo</label>
-      <input type="text" name="newTodo" value="test123" />
+      <label><strong>New To-do</strong></label>
+      <input type="text" name="todo" value="test123" />
       <button
-        hx-post="/createTodo"
+        hx-post="/back-end/routes"
         type="create"
         hx-target="content"
         hx-swap="beforeend"
